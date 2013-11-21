@@ -1,0 +1,373 @@
+\section{特殊相対性理論}
+Zur Elektrodynamik bewegter K\"{o}rper
+
+
+% ============================================================================
+%
+% ローレンツ変換
+%
+% ============================================================================
+\subsection{ローレンツ変換}
+\begin{align}
+  t' & = \frac{t - (v/c^2)x}{\sqrt[]{\mathstrut 1 - {(v/c)}^2}} \\
+  x' & = \frac{x - vt}{\sqrt[]{\mathstrut 1 - {(v/c)}^2}} \\
+  y' & = y \\
+  z' & = z
+\end{align}
+
+\begin{equation}
+  \left[
+    \begin{array}{c}
+      ct' \\ x' \\ y' \\ z' \\
+    \end{array}
+  \right]
+  =
+  \left[
+    \begin{array}{cccc}
+      \gamma & -\gamma \frac{v}{c} & 0 & 0 \\
+      -\gamma \frac{v}{c} & \gamma & 0 & 0 \\
+      0 & 0 & 0 & 0 \\
+      0 & 0 & 0 & 0 \\
+    \end{array}
+  \right]
+  \left[
+    \begin{array}{c}
+      ct \\ x \\ y \\ z \\
+    \end{array}
+  \right]
+\end{equation}
+
+
+
+% ============================================================================
+%
+%
+% 相対論的電磁気学
+%
+%
+% ============================================================================
+\section{Electromagnetism in 4D（相対論的電磁気学）}
+
+
+% ============================================================================
+%
+% ポテンシャル
+%
+% ============================================================================
+\subsection{4-vector potential（4次元ポテンシャルベクトル）}
+\begin{align}
+  A^{\mu } & = \left( \phi /c , \bf{A} \right)\\
+  A_{\mu } & = {\eta }_{\mu \nu } A^{\nu } = \left( - \phi /c , \bf{A} \right)
+\end{align}
+
+\subsection{electromagnetic field tensor}
+\begin{align}
+  F_{\mu \nu }
+    & = {\partial}_{\mu } A_{\nu } - {\partial }_{\nu } A_{\mu } \\
+    & = \left(
+      \begin{array}{cccc}
+        0 & -E_x / c & -E_y / c & -E_z / c \\
+        E_x / c & 0 & B_z & -B_y \\
+        E_y / c & -B_z & 0 & B_x \\
+        E_z / c & B_y & -B_x & 0 \\
+      \end{array}
+    \right)
+\end{align}
+  \[ F_{\mu \nu }
+      = {\partial}_{\mu } A_{\nu } - {\partial }_{\nu } A_{\mu }
+      =
+        \left(
+        \begin{array}{cccc}
+          0 & -E_x / c & -E_y / c & -E_z / c \\
+          E_x / c & 0 & B_z & -B_y \\
+          E_y / c & -B_z & 0 & B_x \\
+          E_z / c & B_y & -B_x & 0 \\
+        \end{array}
+        \right) \]
+  \subsubsection{Properties}
+    \[ F_{\mu \nu} = - F_{\nu \mu} \]
+
+\subsection{Four-current（４元電流）}
+\begin{equation}
+  j^\mu = \left( c\rho, \bf{j} \right)
+\end{equation}
+
+\subsubsection{Continuity equation}
+\begin{equation}
+  \partial_\mu j^\mu = 0
+\end{equation}
+
+\subsection{Maxwell's equations（マクスウェルの方程式）}
+\subsubsection{Ampère's circuital law (with Maxwell's correction)}
+\begin{align}
+  {\bf \nabla} \times {\bf B}
+    & = \mu_0 \left( {\bf J} + \varepsilon_0 \frac{\partial {\bf B}}{\partial t} \right) \\
+  {\bf \nabla} \cdot {\bf E}
+    & = \frac{\rho}{\varepsilon_0}
+\end{align}
+\begin{align}
+  \partial_\mu F^{\mu \nu}
+    & = -\mu_0 j^\mu \\
+  \Box A^\mu - \partial^\mu \partial_\nu A^\nu
+    & = -\mu_0 j^\mu
+\end{align}
+
+\subsubsection{Maxwell–Faraday equation (Faraday's law of induction)}
+\begin{align}
+  {\bf \nabla} \times {\bf E}
+    & = - \frac{\partial {\bf B}}{\partial t} \\
+  {\bf \nabla} \cdot {\bf B}
+    & = 0
+\end{align}
+\begin{equation}
+  \partial_\lambda F_{\mu \nu}
+    + \partial_\mu F_{\nu \lambda}
+    + \partial_\nu F_{\lambda \mu}
+    = 0
+\end{equation}
+
+
+
+% ============================================================================
+%
+%
+% エネルギー運動量テンソル
+%
+%
+% ============================================================================
+\section{Stress-energy tensor（エネルギー運動量テンソル）}
+
+
+% ============================================================================
+%
+% エネルギー運動量テンソルの例
+%
+% ============================================================================
+\subsection{Stress-energy in special situations}
+\subsubsection{Stress-energy of a fluid in equilibrium}
+\begin{align}
+  T^{\alpha \beta }
+    & = \left( \rho + \frac{p}{c^2} \right) u^{\alpha } u^{\beta } + p g^{\alpha \beta } \\
+  g^{\alpha \beta }
+    & = \left(
+      \begin{array}{cccc}
+        -{c}^{-2} & 0 & 0 & 0 \\
+        0 & 1 & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1 \\
+      \end{array}
+    \right) \\
+  T^{\alpha \beta }
+    & = \left(
+      \begin{array}{cccc}
+        \rho & 0 & 0 & 0 \\
+        0 & p & 0 & 0 \\
+        0 & 0 & p & 0 \\
+        0 & 0 & 0 & p \\
+      \end{array}
+    \right)
+\end{align}
+
+
+\subsubsection{Electromagnetic stress-energy tensor}
+\begin{equation}
+  T^{\mu \nu }
+    = \frac{1}{{\mu }_0} \left( F^{\mu \alpha } g_{\alpha \beta } F^{\nu \beta }
+        - \frac{1}{4} g^{\mu \nu } F_{\delta \gamma } F^{\delta \gamma } \right)
+\end{equation}
+
+
+
+% ============================================================================
+%
+%
+% リーマン幾何学
+%
+%
+% ============================================================================
+\section{リーマン幾何学}
+
+
+% ============================================================================
+%
+% 計量テンソル
+%
+% ============================================================================
+\subsection{Metric tensor（計量テンソル）}
+\begin{align}
+  {ds}^2
+    & = g_{ij}(x) {dx}^{i} {dx}^{j} = {g'}_{ij}(x') {dx'}^{i} {dx'}^{j} \\
+  g^{ik} g_{kj}
+    & = {{\delta }^i}_j \\
+  g_{ij} \frac{\partial g^{ij}}{\partial x^k}
+    & = -g^{ij} \frac{\partial g_{ij}}{\partial x^k} \\
+  \frac{\partial g^{ij}}{\partial x^k}
+    & = - g^{il} g^{jm} \frac{\partial g_{jm}}{\partial x^k} \\
+  \frac{\partial g(x)}{\partial x^i}
+    & = g(x) g^{jm} \frac{\partial g_{jm}}{\partial x^i} \\
+  \frac{1}{\sqrt[]{\mathstrut -g}} \frac{\partial \sqrt[]{\mathstrut -g}}{\partial x^i}
+    & = \frac{1}{2} g^{jk} \frac{\partial g_{jk}}{\partial x^i}
+\end{align}
+
+
+\subsubsection{Examples}
+Flat spacetime with coordinates $ (t, x, y, z) $
+\begin{equation}
+  ds^2 = -dt^2 +dx^2 + dy^2 + dz^2
+\end{equation}
+In spherical coordinates $ (t, r, \theta, \phi) $
+\begin{equation}
+  ds^2 = -dt^2 + dr^2 + r^2d\Omega^2
+\end{equation}
+where
+\begin{equation}
+  d\Omega^2 = d\theta^2 + \sin^2 \theta d\phi^2
+\end{equation}
+is the standard metric on the 2-sphere.\\
+\\
+The round metric on a sphere
+\begin{equation}
+  ds^2 = d{\theta }^2 + sin^2\theta d\phi^2
+\end{equation}
+
+
+% ============================================================================
+%
+% クリストッフェル記号
+%
+% ============================================================================
+\subsection{Christoffel symbols（クリストッフェル記号）}
+\begin{align}
+  {\Gamma }^{i}_{kl}
+    & = \frac{1}{2} g^{im} \left( \frac{\partial g_{mk}}{\partial x^l} + \frac{\partial g_{ml}}{\partial x^k} - \frac{\partial g_{kl}}{\partial x^m} \right) \\
+    & = \frac{1}{2} g^{im} \left( g_{mk,l} + g_{ml,k} - g_{kl,m} \right) \\
+  {\Gamma }^{i}_{jk}
+    & = {\Gamma }^{i}_{kj}
+\end{align}
+
+
+% ============================================================================
+%
+% 共変微分
+%
+% ============================================================================
+\subsection{Covariant derivative（共変微分）}
+\subsubsection{Examples}
+\begin{align}
+  {\nabla }_a \phi
+    & = {\partial }_a \phi \\
+  {\nabla }_b V^a
+    & = {\partial }_b V^a + {\Gamma }^{a}_{cb} V^c \\
+  {\nabla }_b V_a
+    & = {\partial }_b V_a - {\Gamma }^{c}_{ab} V_c \\
+  {\nabla }_c T^{ab}
+    & = {\partial }_c T^{ab} + {\Gamma }^{a}_{dc} T^{db} + {\Gamma }^{b}_{dc} T^{ad} \\
+  {\nabla }_c T_{ab}
+    & = {\partial }_c T_{ab} - {\Gamma }^{d}_{ac} T_{db} - {\Gamma }^{d}_{bc} T_{ad}
+\end{align}
+
+
+% ============================================================================
+%
+% リーマンの曲率テンソル
+%
+% ============================================================================
+\subsection{Riemann curvature tensor（リーマンの曲率テンソル）}
+\[ {A_m}_{ [ ;i ;j ] }  \equiv A_{m ;i ;j } - A_{m ;j ;i } \equiv  \]
+\[ {A_m}_{ [ ;i ;j ] }  = {R^b}_{ mij } A_b \]
+\subsubsection{Symmetries and identities}
+Skew symmetry
+\[ R_{abcd} = -R_{bacd} = -R_{abdc} \]
+Interchange symmetry
+\[ R_{abcd} = R_{cdab} \]
+First Bianchi identity
+\[ R_{abcd} + R_{acdb} + R_{adbc} = 0 \]
+\[ R_{a \left[ bcd \right] } = 0 \]
+Second Bianchi identity
+\[ R_{abcd;e} + R_{abde;c} + R_{abec;d} = \nabla_e R_{abcd} + \nabla_c R_{abde} + \nabla_d R_{abec} = 0 \]
+\[ R_{ab \left[ cd;e \right] } = 0 \]
+
+\subsubsection{aa}
+
+
+% ============================================================================
+%
+% アインシュタインテンソル
+%
+% ============================================================================
+\subsection{Einstein tensor（アインシュタインテンソル）}
+\begin{equation}
+  G_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} g_{\mu \nu} R
+\end{equation}
+The Einstein tensor is symmetric
+\begin{equation}
+  G_{\mu \nu } = G_{\nu \mu }
+\end{equation}
+and, like the stress-energy tensor, divergenceless
+\begin{equation}
+  {G^{\mu \nu }}_{;\nu } = {\nabla }_{\nu } G^{\mu \nu } = 0
+\end{equation}
+
+
+
+% ============================================================================
+%
+% 一般相対性理論
+%
+%
+%
+%
+% ============================================================================
+\section{General relativity}
+
+
+
+% ============================================================================
+%
+% 測地線方程式
+%
+% ============================================================================
+\subsection{The geodesic equations}
+\begin{equation}
+  \frac{d^2 x^\alpha }{d\tau^2} + {\Gamma^\alpha }_{\beta \gamma } \frac{dx^\beta }{d\tau } \frac{dx^\gamma }{d\tau } = 0
+\end{equation}
+
+
+% ============================================================================
+%
+% アインシュタイン方程式
+%
+% ============================================================================
+\subsection{Einstein field equations}
+\[ R_{\mu \nu } - \frac{1}{2} g_{\mu \nu }R + g_{\mu \nu }\Lambda = \frac{8\pi G}{c^4} T_{\mu \nu } \]
+\[ G_{\mu \nu } = \frac{8\pi G}{c^4} T_{\mu \nu } \]
+
+
+
+% ============================================================================
+%
+% 3 + 1 分解
+%
+%
+%
+%
+% ============================================================================
+\section{3 + 1 Formalism}
+
+
+
+% ============================================================================
+%
+% アインシュタイン方程式
+%
+% ============================================================================
+\begin{align}
+  \left( \frac{\partial}{\partial t} - {\mathcal L}_{\boldsymbol \beta} \right) K_{ij}
+    & = -D_iD_j N + N \left\{ R_{ij} + KK_{ij} - 2K_{ik} K^k_j + 4\pi \left[ \left( S-E \right) \gamma_{ij} - 2S_{ij} \right] \right\} \\
+  \left( \frac{\partial}{\partial t} - {\mathcal L}_{\boldsymbol \beta} \right) \gamma_{ij}
+    & = -2NK_{ij}
+\end{align}
+\begin{gather}
+  R + K^2 - K_{ij} K^{ij} = 16\pi E \\
+  D_j K^j_i - D_i K = 8\pi p_i
+\end{gather}

@@ -1,0 +1,177 @@
+\section{特殊相対性理論}
+Zur Elektrodynamik bewegter K\"{o}rper
+
+
+% ============================================================================
+%
+% ローレンツ変換
+%
+% ============================================================================
+\subsection{ローレンツ変換}
+\begin{align}
+  t' & = \frac{t - (v/c^2)x}{\sqrt[]{\mathstrut 1 - {(v/c)}^2}} \\
+  x' & = \frac{x - vt}{\sqrt[]{\mathstrut 1 - {(v/c)}^2}} \\
+  y' & = y \\
+  z' & = z
+\end{align}
+
+\begin{equation}
+  \left[
+    \begin{array}{c}
+      ct' \\ x' \\ y' \\ z' \\
+    \end{array}
+  \right]
+  =
+  \left[
+    \begin{array}{cccc}
+      \gamma & -\gamma \frac{v}{c} & 0 & 0 \\
+      -\gamma \frac{v}{c} & \gamma & 0 & 0 \\
+      0 & 0 & 0 & 0 \\
+      0 & 0 & 0 & 0 \\
+    \end{array}
+  \right]
+  \left[
+    \begin{array}{c}
+      ct \\ x \\ y \\ z \\
+    \end{array}
+  \right]
+\end{equation}
+
+
+
+% ============================================================================
+%
+%
+% 相対論的電磁気学
+%
+%
+% ============================================================================
+\section{Electromagnetism in 4D（相対論的電磁気学）}
+
+
+% ============================================================================
+%
+% ポテンシャル
+%
+% ============================================================================
+\subsection{4-vector potential（4次元ポテンシャルベクトル）}
+\begin{align}
+  A^{\mu } & = \left( \phi /c , \bf{A} \right)\\
+  A_{\mu } & = {\eta }_{\mu \nu } A^{\nu } = \left( - \phi /c , \bf{A} \right)
+\end{align}
+
+\subsection{electromagnetic field tensor}
+\begin{align}
+  F_{\mu \nu }
+    & = {\partial}_{\mu } A_{\nu } - {\partial }_{\nu } A_{\mu } \\
+    & = \left(
+      \begin{array}{cccc}
+        0 & -E_x / c & -E_y / c & -E_z / c \\
+        E_x / c & 0 & B_z & -B_y \\
+        E_y / c & -B_z & 0 & B_x \\
+        E_z / c & B_y & -B_x & 0 \\
+      \end{array}
+    \right)
+\end{align}
+  \[ F_{\mu \nu }
+      = {\partial}_{\mu } A_{\nu } - {\partial }_{\nu } A_{\mu }
+      =
+        \left(
+        \begin{array}{cccc}
+          0 & -E_x / c & -E_y / c & -E_z / c \\
+          E_x / c & 0 & B_z & -B_y \\
+          E_y / c & -B_z & 0 & B_x \\
+          E_z / c & B_y & -B_x & 0 \\
+        \end{array}
+        \right) \]
+  \subsubsection{Properties}
+    \[ F_{\mu \nu} = - F_{\nu \mu} \]
+
+\subsection{Four-current（４元電流）}
+\begin{equation}
+  j^\mu = \left( c\rho, \bf{j} \right)
+\end{equation}
+
+\subsubsection{Continuity equation}
+\begin{equation}
+  \partial_\mu j^\mu = 0
+\end{equation}
+
+\subsection{Maxwell's equations（マクスウェルの方程式）}
+\subsubsection{Ampère's circuital law (with Maxwell's correction)}
+\begin{align}
+  {\bf \nabla} \times {\bf B}
+    & = \mu_0 \left( {\bf J} + \varepsilon_0 \frac{\partial {\bf B}}{\partial t} \right) \\
+  {\bf \nabla} \cdot {\bf E}
+    & = \frac{\rho}{\varepsilon_0}
+\end{align}
+\begin{align}
+  \partial_\mu F^{\mu \nu}
+    & = -\mu_0 j^\mu \\
+  \Box A^\mu - \partial^\mu \partial_\nu A^\nu
+    & = -\mu_0 j^\mu
+\end{align}
+
+\subsubsection{Maxwell–Faraday equation (Faraday's law of induction)}
+\begin{align}
+  {\bf \nabla} \times {\bf E}
+    & = - \frac{\partial {\bf B}}{\partial t} \\
+  {\bf \nabla} \cdot {\bf B}
+    & = 0
+\end{align}
+\begin{equation}
+  \partial_\lambda F_{\mu \nu}
+    + \partial_\mu F_{\nu \lambda}
+    + \partial_\nu F_{\lambda \mu}
+    = 0
+\end{equation}
+
+
+
+% ============================================================================
+%
+%
+% エネルギー運動量テンソル
+%
+%
+% ============================================================================
+\section{Stress-energy tensor（エネルギー運動量テンソル）}
+
+
+% ============================================================================
+%
+% エネルギー運動量テンソルの例
+%
+% ============================================================================
+\subsection{Stress-energy in special situations}
+\subsubsection{Stress-energy of a fluid in equilibrium}
+\begin{align}
+  T^{\alpha \beta }
+    & = \left( \rho + \frac{p}{c^2} \right) u^{\alpha } u^{\beta } + p g^{\alpha \beta } \\
+  g^{\alpha \beta }
+    & = \left(
+      \begin{array}{cccc}
+        -{c}^{-2} & 0 & 0 & 0 \\
+        0 & 1 & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1 \\
+      \end{array}
+    \right) \\
+  T^{\alpha \beta }
+    & = \left(
+      \begin{array}{cccc}
+        \rho & 0 & 0 & 0 \\
+        0 & p & 0 & 0 \\
+        0 & 0 & p & 0 \\
+        0 & 0 & 0 & p \\
+      \end{array}
+    \right)
+\end{align}
+
+
+\subsubsection{Electromagnetic stress-energy tensor}
+\begin{equation}
+  T^{\mu \nu }
+    = \frac{1}{{\mu }_0} \left( F^{\mu \alpha } g_{\alpha \beta } F^{\nu \beta }
+        - \frac{1}{4} g^{\mu \nu } F_{\delta \gamma } F^{\delta \gamma } \right)
+\end{equation}
