@@ -1,0 +1,45 @@
+% ============================================================================
+%
+% 物理学まとめノート
+%
+%
+%
+%
+% ============================================================================
+\section{Gamma function (ガンマ関数)}
+
+
+\subsection{Definition}
+
+\subsubsection{Main definition}
+\begin{equation}
+  \Gamma \left( z \right) = \int^{\infty }_{0} t^{z-1} e^{-t} dt
+\end{equation}
+
+\begin{align}
+  \Gamma \left( z + 1 \right)
+      & = z \Gamma \left( z \right) \\
+  \Gamma \left( n \right)
+      & = \left( n - 1 \right) !
+\end{align}
+
+
+
+\subsubsection{Alternative definitions}
+\begin{align}
+  \Gamma \left( z \right)
+      & = \lim_{ n \to \infty} \frac{ n! n^z } { z \left( z+1 \right) \cdots \left( z + n \right) } \\
+      & = \frac{ 1 }{ z } \prod_{n=1}^{\infty } \frac{ {\left( 1 + 1/n \right)}^{z} }{ 1 + z/n } \\
+  \Gamma \left( z \right)
+      & = \frac{ e^{ -\gamma z } }{ z } \prod_{n=1}^{\infty } { \left( 1 + \frac{z}{n} \right) }^{-1} e^{z/n}
+\end{align}
+
+where $ \gamma \approx 0.577216 $ is the Euler-Mascheroni constant.
+\begin{align}
+  \gamma
+    & = \lim_{ n \to \infty } \left( \sum_{k=1}^{n} \frac{1}{k} - \ln (n) \right) \\
+    & = \int_{1}^{\infty } \left( \frac{1}{?x?} - \frac{1}{x} \right) dx
+\end{align}
+
+
+\subsection{Properties}

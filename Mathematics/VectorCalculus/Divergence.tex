@@ -1,0 +1,16 @@
+% ============================================================================
+%
+% 物理学まとめノート
+%
+%
+%
+%
+% ============================================================================
+\section{Divergence (発散)}
+
+\begin{align}
+  \nabla \cdot \mathbf{A}
+      & = {\partial A_x \over \partial x} + {\partial A_y \over \partial y} + {\partial A_z \over \partial z} \\
+      & = {1 \over \rho}{\partial \left( \rho A_\rho \right) \over \partial \rho} + {1 \over \rho}{\partial A_\phi \over \partial \phi} + {\partial A_z \over \partial z} \\
+      & = {1 \over r^2}{\partial \left( r^2 A_r \right) \over \partial r} + {1 \over r\sin\theta}{\partial \over \partial \theta} \left( A_\theta\sin\theta \right) + {1 \over r\sin\theta}{\partial A_\phi \over \partial \phi}
+\end{align}

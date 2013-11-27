@@ -1,0 +1,15 @@
+% ============================================================================
+%
+% 物理学まとめノート
+%
+%
+%
+%
+% ============================================================================
+\section{Laplace operator (ラプラス演算子)}
+
+\begin{eqnarray*}
+\Delta f  & = & \frac{\partial^2 f}{\partial x^2} + \frac{\partial^2 f}{\partial y^2} + \frac{\partial^2 f}{\partial z^2} \\
+      & = & {1 \over \rho} {\partial \over \partial \rho} \left( \rho {\partial f \over \partial \rho} \right) + {1 \over \rho^2} {\partial^2 f \over \partial \theta^2} + {\partial^2 f \over \partial z^2 } \\
+      & = & {1 \over r^2} {\partial \over \partial r} \left( r^2 {\partial f \over \partial r} \right) + {1 \over r^2 \sin \theta} {\partial \over \partial \theta} \left( \sin \theta {\partial f \over \partial \theta} \right) + {1 \over r^2 \sin^2 \theta} {\partial^2 f \over \partial \phi^2}
+\end{eqnarray*}

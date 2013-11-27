@@ -1,0 +1,16 @@
+% ============================================================================
+%
+% 物理学まとめノート
+%
+%
+%
+%
+% ============================================================================
+\section{Curl (回転)}
+
+\begin{eqnarray*}
+\nabla \times \mathbf{A}  & = &   \left({\partial A_z \over \partial y} - {\partial A_y \over \partial z}\right) \mathbf{\hat x} + \left({\partial A_x \over \partial z} - {\partial A_z \over \partial x}\right) \mathbf{\hat y} + \left({\partial A_y \over \partial x} - {\partial A_x \over \partial y}\right) \mathbf{\hat z} \\
+                  & = & \left({1 \over \rho}{\partial A_z \over \partial \phi} - {\partial A_\phi \over \partial z}\right) {\hat \rho} + \left({\partial A_\rho \over \partial z} - {\partial A_z \over \partial \rho}\right) {\hat \phi} + {1 \over \rho}\left({\partial \left( \rho A_\phi \right) \over \partial \rho} - {\partial A_\rho \over \partial \phi}\right) {\hat z} \\
+                  & = & {1 \over r\sin\theta}\left({\partial \over \partial \theta} \left( A_\phi\sin\theta \right) - {\partial A_\theta \over \partial \phi}\right) {\hat r} + {1 \over r}\left({1 \over \sin\theta}{\partial A_r \over \partial \phi} - {\partial \over \partial r} \left( r A_\phi \right) \right) {\hat \theta} \\
+                  & &   + {1 \over r}\left({\partial \over \partial r} \left( r A_\theta \right) - {\partial A_r \over \partial \theta}\right) {\hat \phi}
+\end{eqnarray*}
