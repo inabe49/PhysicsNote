@@ -1,0 +1,38 @@
+% ============================================================================
+%
+% 物理学まとめノート
+%
+%
+%
+%
+% ============================================================================
+\section{Perturbation theory (摂動論)}
+
+
+\subsection{時間依・存縮退のない摂動}
+
+波動関数$ \ket{ \psi_n } $、$ E_n $を
+\begin{eqnarray*}
+\ket{ \psi_n }  & = & \ket{ \psi_n^{(0)} } + \lambda \ket{ \psi_n^{(1)} } + \lambda^2 \ket{ \psi_n^{(2)} } + \lambda^3 \ket{ \psi_n^{(3)} } + \cdots\\
+E_n         & = & E_n^{(0)} + \lambda E_n^{(1)} + \lambda^2 E_n^{(2)} + \lambda^3 E_n^{(3)} + \cdots\\
+\end{eqnarray*}
+とし、波動方程式を
+\[ \left( \hat{H} + \lambda \hat{H'} \right) \ket{ \psi_n } = E_n \ket{\psi_n} \]
+とする。\\
+1次の摂動項
+\[ \ket{\psi_n^{(1)}} = \sum_m C_m \ket{\psi_m^{(0)}} \]
+と置くと$ k \not= n $で、
+\begin{eqnarray*}
+C_k & = & -\frac{ \Braket{ \psi_k^{(0)} | \hat{H'} | \psi_n^{(0)} } }{ E_k^{(0)} - E_n^{(0)} } \\
+C_n & = & 0 \\
+\end{eqnarray*}
+となり、
+\begin{eqnarray*}
+E_n^{(1)}   & = & \Braket{ \psi_n^{(0)} | \hat{H'} | \psi_n^{(0)} } \\
+\ket{ \psi_n^{(1)}} & = & -\sum_{m\not= n} \frac{ \Braket{ \psi_m^{(0)} | \hat{H'} | \psi_n^{(0)} }}{ E_m^{(0)} - E_n^{(0)} } \ket{ \psi_m^{(0)} } \\
+\end{eqnarray*}
+である。
+2次の摂動項
+\[ E_n^{(2)} = -\sum_{m \not= n}\frac{ {\left| \Braket{\psi_m^{(0)} | \hat{H'} | \psi_n^{(0)} } \right|}^2 }{ E_m^{(0)} - E_n^{(0)} } \]
+また摂動はおおよそ以下の条件下で近似として機能する
+\[ \left| \lambda \Braket{ \psi_m^{(0)} | \hat{H'} | \psi_n^{(0)} } \right| \ll \left| E_m^{(0)} - E_n^{(0)} \right| \]

@@ -1,0 +1,64 @@
+\section{electrostatic field (静電場)}
+
+
+\subsection{Coulomb's law (クーロンの法則)}
+\begin{align}
+  {\bf F}
+      & = k \frac{q_1 \cdot q_2}{r^2} \\
+      & = \frac{1}{4\pi \varepsilon_0 } \cdot \frac{q_1 \cdot q_2}{r^2}
+\end{align}
+
+\begin{align}
+  {\bf F} ( {\bf r} )
+      & = \frac{q}{4\pi \varepsilon_0} \sum_{i} \frac{Q_i ( {\bf r}_q - {\bf r}_i )}{ {| {\bf r}_q - {\bf r}_i |}^3 } \\
+      & = q{\bf E} ({\bf r})
+\end{align}
+
+
+\subsubsection{真空の誘電率}
+\begin{align}
+  \varepsilon_0
+      & = \frac{10^7}{4\pi c^2} \\
+      & = 8.854\times 10^{-12} [C^2/N\cdot m^2]
+\end{align}
+
+
+\subsection{静電場}
+\begin{align}
+  {\bf E} ( {\bf r} )
+      & = \frac{1}{4\pi \varepsilon_0} \sum_{i} \frac{Q_i ( {\bf r}_q - {\bf r}_i )}{ {| {\bf r}_q - {\bf r}_i |}^3 } \\
+      & = \frac{1}{4\pi \varepsilon_0} \int_V \frac{\rho ({\bf r'}) ( {\bf r} - {\bf r'} )}{ {| {\bf r} - {\bf r'} |}^3 } dV'
+\end{align}
+
+原点に$q$がある場合
+\begin{equation}
+  {\bf E} ({\bf r}) = \frac{q}{4\pi \varepsilon_0} {\bf e}_r
+\end{equation}
+
+\begin{equation}
+  {\bf F}( {\bf r}) = q {\bf E} ( {\bf r})
+\end{equation}
+
+
+\subsection{ガウスの法則}
+\[ \int_{S_0} {\bf E}_n \cdot d{\bf S} = \frac{Q}{\varepsilon_0} \]
+\[ \div {\bf E} = \frac{Q}{\varepsilon_0} \]
+
+
+\subsection{静電ポテンシャル}
+\[ dW = {\bf F} \cdot d{\bf s} = q{\bf E}\cdot d{\bf S} \]
+\[ W_{A\rightarrow B} = q \int_{A}^{B} {\bf E} \cdot d{\bf s} = q \left[ \phi ({\bf r}_A) - \phi ({\bf r}_B) \right] \]
+
+
+\subsubsection{基準点付きの静電ポテンシャル}
+\[ \phi ({\bf r}) = - \int_{{\bf r}_0}^{{\bf r}} {\bf E} \cdot d{\bf s} \]
+
+
+\subsubsection{電場との関係}
+\begin{equation}
+  {\bf E} ({\bf r}) \cdot d{\bf s} = -d \phi ({\bf r})
+\end{equation}
+
+\begin{equation}
+  {\bf E} ({\bf r}) = - \grad \phi ({\bf r})
+\end{equation}

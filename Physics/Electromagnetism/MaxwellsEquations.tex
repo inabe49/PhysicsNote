@@ -1,0 +1,38 @@
+\section{Maxwell's equations (マクスウェルの方程式)}
+
+
+\subsection{Integral form}
+Gauss's law
+\[ \oint_{S} \bf{D} \cdot \rm{d} \bf{A} = Q_{f,S} \]
+Gauss's law for magnetism
+\[ \oint_{S} \bf{B} \cdot \rm{d} \bf{A} = 0 \]
+Maxwell-Faraday equation
+\[ \oint_{\partial S} \bf{E} \cdot \rm{d} \bf{l} = - \frac {\partial \Phi_{B,S}}{\partial t} \]
+Ampere's circuital law
+\[ \oint_{\partial S} \bf{H} \cdot \rm{d} \bf{l} = I_{f,S} + \frac {\partial \Phi_{D,S}}{\partial t} \]
+
+\subsection{Differential form}
+Gauss's law
+\[ \rm{div} \bf{D} = \nabla \cdot \bf{D} = {\rho}_{f} \]
+Gauss's law for magnetism
+\[ \rm{div} \bf{B} = \nabla \cdot \bf{B} = 0 \]
+Maxwell-Faraday equation
+\[ \rm{rot} \bf{E} = \nabla \times \bf{E} = - \frac{ \partial \bf{B} }{ \partial t} \]
+Ampere's circuital law
+\[ \rm{rot} \bf{H} = \nabla \times \bf{H} = \bf{J}_{f} + \frac{ \partial \bf{D} }{ \partial t} \]
+
+\subsection{Definitions and units}
+\[ \bf{D} = {\varepsilon}_{0} \bf{E} + \bf{P} = {\epsilon}_{0} \bf{E} \]
+\[ \bf{B} = {\mu}_{0} \left( \bf{H} + \bf{M} \right) \]
+$\bf{D}$ is the electric flux density. \ \ $ \bf{E} $ is the electric field. $ \bf{P} $ is the polarization density.\\
+$\bf{B}$ is the magnetic flux density. \ \ $ \bf{H} $ is the magnetic field. $ \bf{M} $ is the magnetization density.\\
+$ {\varepsilon}_{0} \approx  5.526\ 35\ \ldots \times 10^{7} [ \bf{A}^{2} s^{4} / kg \  m^{3} ] $ is the permittivity of free space.\\
+$ {\mu}_{0} := 4\pi\times 10^{-7} [ \bf{N} / \bf{A}^{2} ] $ is the permeability of free space.\\
+
+\subsection{Electromagnetic wave equation}
+
+\[ \left( {\nabla}^2 - \frac{ 1 }{ c^2 } \frac{ \partial }{ \partial t} \right) \bf{E} = \Box \bf{E} = 0 \]
+\[ \left( {\nabla}^2 - \frac{ 1 }{ c^2 } \frac{ \partial }{ \partial t} \right) \bf{B} = \Box \bf{B} = 0 \]
+$ c = c_0 = { \frac{ 1 }{ \sqrt{ \mu_0 \varepsilon_0 } } } = 2.99792458 \times 10^8 [ m / s ] $ is the speed of light in vacuum.\\
+\[ \Box = g^{\mu\nu} \partial_\nu \partial_\mu = \left( {\nabla}^2 - \frac{ 1 }{ c^2 } \frac{ \partial }{ \partial t} \right) \]
+$ \Box $ is the d'Alembertian operator.
