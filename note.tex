@@ -6,10 +6,12 @@
 %
 %
 % ============================================================================
-\documentclass[a4j]{jarticle}
+\documentclass[a4j]{jsbook}
 \usepackage{amsmath, amsthm, amssymb, ascmac}
 
 
+\setlength{\textwidth}{\fullwidth}
+\setlength{\evensidemargin}{\oddsidemargin}
 
 \begin{document}
 
@@ -31,7 +33,9 @@
 % 解析力学
 %
 % ============================================================================
-\input{Physics/AnalyticalMechanics.tex}
+\chapter{解析力学}
+\input{Physics/AnalyticalMechanics/LagrangianMechanics.tex}
+\input{Physics/AnalyticalMechanics/HamiltonianMechanics.tex}
 
 
 
@@ -42,6 +46,7 @@
 %
 %
 % ============================================================================
+\chapter{相対性理論}
 \input{Physics/Relativity/SpecialRelativity.tex}
 \input{Physics/Relativity/RiemannianGeometry.tex}
 \input{Physics/Relativity/GeneralRelativity.tex}

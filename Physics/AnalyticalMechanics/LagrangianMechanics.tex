@@ -1,0 +1,41 @@
+% ============================================================================
+%
+% ラグランジュ力学
+%
+% ============================================================================
+\section{Lagrangian mechanics (ラグランジュ力学)}
+
+
+\subsection{Virtual work principle (仮想仕事の原理)}
+\begin{equation}
+  {\delta}' W = \sum^{N}_{i=1} {\bf F}_i \cdot \delta {\bf r}_i = 0
+\end{equation}
+
+\subsection{D'Alembert's principle (ダランベールの原理)}
+\begin{equation}
+  {\bf K}_i - m_i \ddot{\bf{r}} = 0
+\end{equation}
+
+\subsection{(ラグランジュの変分方程式)}
+\[ \sum^{N}_{i=1} \left( {\bf F}_i + {\bf S}_i - m_i \ddot{\bf r}_i \right) \cdot \delta {\bf r}_i \]
+\[ \sum^{N}_{i=1} \left( {\bf F}_i - m_i \ddot{\bf r}_i \right) \cdot \delta {\bf r}_i \]
+
+
+\subsection{(第一種ラグランジュ運動方程式)}
+\begin{equation}
+  m_i \ddot{x}_i = F_i + \sum^{h}_{l=1} {\lambda}_l \frac{ \partial f_l }{ \partial x_i } ,\ \ \  i = 1,2,\cdots ,n
+\end{equation}
+$ \lambda_i $ are undetermined Lagrange multipliers.
+
+
+\subsection{Lagrange's equations (第二種ラグランジュの運動方程式)}
+\begin{equation}
+  \frac{ d }{ dt } \left( \frac{ \partial L }{ \partial \dot{q}_i } \right) - \frac{ \partial L }{ \partial q_i } = 0 , \ \ \  i = 1,2,\cdots , f
+\end{equation}
+
+
+\subsection{Examples}
+\begin{align}
+  L & = T (\dot q) - V(q) \\
+  L & = \frac{ 1 }{ 2 } m \dot{{\bf{r}}^2} - e \phi + e \dot{ \bf r } \cdot \bf{A} \\
+\end{align}

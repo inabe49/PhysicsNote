@@ -1,0 +1,47 @@
+% ============================================================================
+%
+% ハミルトニアン力学
+%
+% ============================================================================
+\section{Hamiltonian mechanics (ハミルトニアン力学)}
+
+
+\subsection{generalized momenta (一般運動量)}
+\begin{equation}
+  p_i = \frac{ \partial L }{ \partial \dot{q}_i }
+\end{equation}
+
+
+\subsection{Hamiltonian (ハミルトニアン)}
+\begin{align}
+  H & = \sum_i p_i \dot{q}_i - L \\
+  dH
+      & = \sum_i \left[ \left( F_i - {\dot p}_i \right) d q_i + {\dot q_i} d p_i \right] - \frac{ \partial L }{\partial t} d t \\
+      & = \sum_i \left[ \frac{ \partial H }{ \partial q_i } d q_i + \frac{ \partial H }{ \partial p_i } d p_i \right] + \frac{ \partial H }{ \partial t } d t
+\end{align}
+
+
+\subsection{Hamilton's canonical equations (ハミルトンの正準方程式)}
+\begin{align}
+  \frac{ \partial H }{ \partial q_i }
+      & = F_i - \dot{p}_i \\
+  \frac{ \partial H }{ \partial p_i }
+      & = \dot{q}_i \\
+  \frac{ \partial H }{ \partial t }
+      & = - \frac{ \partial L }{ \partial t }
+\end{align}
+
+
+\subsection{Poisson bracket (ポアソンの括弧式)}
+\begin{align}
+  \left\{ X , H \right\}
+      & = \sum_i \left( \frac{\partial X}{\partial q_i}\frac{\partial H}{\partial p_i} + \frac{\partial X}{\partial p_i}\frac{\partial H}{\partial q_i} \right) \\
+  \frac{dX}{dt}
+      & = \sum_i \left( \frac{\partial X}{\partial q_i}\frac{\partial H}{\partial p_i} + \frac{\partial X}{\partial p_i}\frac{\partial H}{\partial q_i} \right) + \frac{\partial X}{\partial t} \\
+      & = \left\{ X , H \right\} + \frac{\partial X}{\partial t} \\
+\end{align}
+
+\begin{align}
+  \dot{q_i} & = \left\{ q_i , H \right\} \\
+  \dot{p_i} & = \left\{ p_i , H \right\} \\
+\end{align}
